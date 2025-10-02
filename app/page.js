@@ -22,14 +22,16 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button className="rounded-full bg-emerald-500 text-black hover:bg-emerald-400 gap-2">
               <Download size={16} />
-              Download CV
+              <a href="/amitgoswami_new.pdf" download>
+                Download CV
+              </a>
             </Button>
             <div className="flex items-center gap-3">
               <Button size="icon" variant="outline" className="rounded-full border-emerald-500/40 bg-transparent hover:bg-emerald-500/10">
-                <Github className="h-4 w-4 text-emerald-400" />
+                <a href='https://github.com/1234amit'><Github className="h-4 w-4 text-emerald-400" /></a>
               </Button>
               <Button size="icon" variant="outline" className="rounded-full border-emerald-500/40 bg-transparent hover:bg-emerald-500/10">
-                <Linkedin className="h-4 w-4 text-emerald-400" />
+                <a href='https://www.linkedin.com/in/amit-goswami1/'><Linkedin className="h-4 w-4 text-emerald-400" /></a>
               </Button>
               <Button size="icon" variant="outline" className="rounded-full border-emerald-500/40 bg-transparent hover:bg-emerald-500/10">
                 <Youtube className="h-4 w-4 text-emerald-400" />
@@ -42,7 +44,7 @@ export default function HomePage() {
 
           <div className="mt-12 grid max-w-2xl grid-cols-2 gap-8 sm:grid-cols-4 text-white">
             <div><div className="text-4xl font-bold">6+</div><div className="mt-1 text-xs uppercase tracking-wider text-gray-400">Years of experience</div></div>
-            <div><div className="text-4xl font-bold">26</div><div className="mt-1 text-xs uppercase tracking-wider text-gray-400">Projects completed</div></div>
+            <div><div className="text-4xl font-bold">42</div><div className="mt-1 text-xs uppercase tracking-wider text-gray-400">Projects completed</div></div>
             <div><div className="text-4xl font-bold">8</div><div className="mt-1 text-xs uppercase tracking-wider text-gray-400">Technologies mastered</div></div>
             <div><div className="text-4xl font-bold">155</div><div className="mt-1 text-xs uppercase tracking-wider text-gray-400">Code push into Github</div></div>
           </div>
