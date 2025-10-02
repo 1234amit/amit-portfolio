@@ -14,7 +14,7 @@ const PROJECTS = [
     desc:
       'Welcome to the Online Quiz Application, a cutting-edge platform designed to revolutionize learning and assessment experiences for teachers and students alike. Developed using Django, Bootstrap, JavaScript, Sass, and HTML5, this application offers a dynamic and interactive environment for conducting quizzes, tests, and assessments online.',
     stack: ['Django', 'css', 'Javascript', 'Bootstrap'],
-    image: '/projects/cila.png',          // ⬅ use the import
+    image: '/projects/cila.PNG',          // ⬅ use the import
     live: 'https://cila-challenge.fr/',
     repo: '#',
   },
@@ -24,7 +24,7 @@ const PROJECTS = [
     desc:
       'Our agency website project aimed to establish an online presence that showcases our services, expertise, and portfolio to potential clients Leveraging Django, Tailwind CSS, MySQL, and Sass, we crafted a dynamic and responsive website tailored to meet the needs of our agency and engage visitors effectively.',
     stack: ['Django', 'Tailwind', 'Mysql', "sass"],
-    image: '/projects/kalu.png',         // ⬅
+    image: '/projects/kalu.PNG',         // ⬅
     live: 'https://incofile.com/',
     repo: '#',
   },
@@ -34,7 +34,7 @@ const PROJECTS = [
     desc:
       'Accessory store mangament system is a ecommerce website. i created by using django, mongodb, tailwind css, bootstrap',
     stack: ['django', 'mongodb', 'tailwind css'],
-    image: '/projects/ecom.png',          // ⬅
+    image: '/projects/ecom.PNG',          // ⬅
     live: 'https://ecnavi.jp/',
     repo: '#',
   },
@@ -44,7 +44,7 @@ const PROJECTS = [
     desc:
       'online marketplace is one of product selling website. it is created by using django, react js, react-bootstrap',
     stack: ['django', 'mongodb', 'react js', 'react-bootstrap'],
-    image: '/projects/7-project.png',         // ⬅
+    image: '/projects/7-project.PNG',         // ⬅
     live: '#',
     repo: 'https://github.com/1234amit/OnlineMarketPlace',
   }
