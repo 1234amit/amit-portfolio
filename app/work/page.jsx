@@ -6,11 +6,6 @@ import Link from 'next/link'
 import { ArrowUpRight, Github, ChevronLeft, ChevronRight } from 'lucide-react'
 import styles from './work.module.scss'
 
-// ✅ static imports (can be anywhere in your repo)
-// import firstImage from '/projects/cila.png'
-// import secondImage from '/project/kalu.png'
-// import thirdImage from '/project/ecom.png'
-// import fourthImage from '/project/7-project.png'
 
 const PROJECTS = [
   {
@@ -98,6 +93,7 @@ export default function WorkPage() {
               alt={p.title}
               fill
               priority
+              unoptimized
               sizes="(max-width: 768px) 90vw, 48vw"
               className="object-cover rounded-xl"
             />
