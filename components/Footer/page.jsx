@@ -13,10 +13,6 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-emerald-500/20 pt-6 text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>© {year} Amit. All rights reserved.</div>
-          <div className="flex items-center gap-4">
-            <Link className="hover:text-emerald-400" href="/privacy">Privacy</Link>
-            <Link className="hover:text-emerald-400" href="/terms">Terms</Link>
-          </div>
         </div>
       </div>
     </footer>
