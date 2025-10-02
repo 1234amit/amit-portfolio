@@ -14,7 +14,7 @@ const PROJECTS = [
     desc:
       'Welcome to the Online Quiz Application, a cutting-edge platform designed to revolutionize learning and assessment experiences for teachers and students alike. Developed using Django, Bootstrap, JavaScript, Sass, and HTML5, this application offers a dynamic and interactive environment for conducting quizzes, tests, and assessments online.',
     stack: ['Django', 'css', 'Javascript', 'Bootstrap'],
-    image: '/projects/cila.PNG',          // ⬅ use the import
+    image: '/projects/cila.png',          // ⬅ use the import
     live: 'https://cila-challenge.fr/',
     repo: '#',
   },
