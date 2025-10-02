@@ -1,0 +1,15 @@
+$primary: #10f7a6;
+
+/* Soft neon line on top of the footer */
+.glowTop {
+  position: relative;
+}
+.glowTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba($primary,.0), rgba($primary,.4), rgba($primary,.0));
+  box-shadow: 0 0 22px rgba($primary,.35);
+}

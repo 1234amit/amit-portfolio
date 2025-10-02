@@ -1,0 +1,39 @@
+$primary: #10f7a6;
+
+.neon {
+  position: relative;
+  border-radius: 9999px;
+}
+.neon::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 9999px;
+  background:
+    conic-gradient(
+      from 0deg,
+      rgba($primary,1) 0 18deg,
+      transparent 18deg 90deg,
+      rgba($primary,1) 90deg 108deg,
+      transparent 108deg 180deg,
+      rgba($primary,1) 180deg 198deg,
+      transparent 198deg 270deg,
+      rgba($primary,1) 270deg 288deg,
+      transparent 288deg 360deg
+    );
+  mask: radial-gradient(circle at center, transparent 73%, #000 74%);
+  -webkit-mask: radial-gradient(circle at center, transparent 73%, #000 74%);
+  filter: drop-shadow(0 0 14px rgba($primary,.5));
+  animation: neon-spin 14s linear infinite;
+}
+.neon::after {
+  content: "";
+  position: absolute;
+  inset: -34px;
+  border-radius: 9999px;
+  background: radial-gradient(closest-side, rgba($primary,.15), transparent 70%);
+  pointer-events: none;
+}
+@keyframes neon-spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,30 @@
+$edge: rgba(16, 247, 166, 0.14);
+$panel: rgba(255,255,255,0.04);
+$primary: #10f7a6;
+
+.panel {
+  background: linear-gradient(180deg, $panel, rgba(255,255,255,0.02));
+  border: 1px solid $edge;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+.card {
+  @extend .panel;
+  position: relative;
+  overflow: hidden;
+}
+
+.rightAccent {
+  position: relative;
+}
+.rightAccent::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 6px;
+  height: calc(100% - 24px);
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba($primary, .9), rgba($primary, .55));
+  box-shadow: 0 0 18px rgba($primary, .35);
+}
