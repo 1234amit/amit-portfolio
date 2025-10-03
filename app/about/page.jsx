@@ -78,22 +78,7 @@ export default function AboutPage() {
             </Button>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <div data-panel className={`${styles.panel} rounded-2xl p-6`}>
-              <div className="font-semibold flex items-center gap-3"><Briefcase className="h-5 w-5 text-emerald-400" />Experience</div>
-              <div data-timeline className="mt-4 space-y-5">
-                <TimelineItem title="Full-Stack Developer" meta="Squareko • Present" desc="Built component libraries, APIs, and dashboards with Next.js, Node, and PostgreSQL/MongoDB." />
-                <TimelineItem title="Freelance" meta="2019 — Present" desc="Delivered pixel-perfect sites and scalable backends for SMEs and startups." />
-              </div>
-            </div>
-            <div data-panel className={`${styles.panel} rounded-2xl p-6`}>
-              <div className="font-semibold flex items-center gap-3"><Award className="h-5 w-5 text-emerald-400" />Education</div>
-              <div data-timeline className="mt-4 space-y-5">
-                <TimelineItem title="B.Sc. in CSE" meta="2016 — 2020" desc="Focused on software engineering and web systems." />
-                <TimelineItem title="Continuous Learning" meta="Ongoing" desc="Framework upgrades, patterns, and performance." />
-              </div>
-            </div>
-          </div>
+          
         </section>
 
         <aside className="flex flex-col items-center md:items-end">
