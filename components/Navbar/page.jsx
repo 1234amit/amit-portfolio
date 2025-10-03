@@ -54,7 +54,8 @@ const Navber = () => {
               <div className="h-full flex flex-col items-center justify-center gap-10 px-6">
                 <ul className="w-full space-y-8 text-center text-xl">
                   <li><SheetClose asChild><Link href="/" className={linkCls('/')}>Home</Link></SheetClose></li>
-                  <li><SheetClose asChild><Link href="/about" className={linkCls('/')}>About</Link></SheetClose></li>
+                  <li><SheetClose asChild><Link href="/about" className={linkCls('/about')}>About</Link>
+                  </SheetClose></li>
                   <li><SheetClose asChild><Link href="/services" className={linkCls('/services')}>Services</Link></SheetClose></li>
                   <li><SheetClose asChild><Link href="/resume" className={linkCls('/resume')}>Resume</Link></SheetClose></li>
                   <li><SheetClose asChild><Link href="/work" className={linkCls('/work')}>Work</Link></SheetClose></li>
