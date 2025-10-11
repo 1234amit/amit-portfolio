@@ -40,7 +40,7 @@ const PROJECTS = [
   },
   {
     no: '04',
-    title: '',
+    title: 'Book selling Application',
     desc:
       'online marketplace is one of product selling website. it is created by using django, react js, react-bootstrap',
     stack: ['django', 'mongodb', 'react js', 'react-bootstrap'],
@@ -49,15 +49,27 @@ const PROJECTS = [
     repo: 'https://github.com/1234amit/OnlineMarketPlace',
   },
   {
-     no: '05',
+    no: '05',
     title: 'Pos Application',
     desc:
-          'A full-featured Point of Sale (POS) application API developed using Spring Boot and PostgreSQL. This project provides core functionalities for managing products, handling sales transactions, generating invoices, and tracking customer and inventory data. It is designed with scalability and performance in mind, featuring secure REST APIs and database integration. Ideal for retail or business operations looking for a reliable POS backend system.',
+      'A full-featured Point of Sale (POS) application API developed using Spring Boot and PostgreSQL. This project provides core functionalities for managing products, handling sales transactions, generating invoices, and tracking customer and inventory data. It is designed with scalability and performance in mind, featuring secure REST APIs and database integration. Ideal for retail or business operations looking for a reliable POS backend system.',
 
     stack: ['Spring Boot', 'Postgrasql'],
     image: '/projects/8.png',         // ⬅
     live: '#',
     repo: 'https://github.com/1234amit/Pos-Application-using-React-and-Spring-Boot',
+  },
+
+  {
+    no: '06',
+    title: 'Note Application',
+    desc:
+      'NoteApp is a modern, full-stack note application built with Next.js (App Router) and NestJS, written end-to-end in TypeScript. It’s designed for speed, clarity, and focus—so you can capture ideas, organize them instantly, and get back to work without friction.',
+
+    stack: ['Next js', 'Nest js'],
+    image: '/projects/note.PNG',         // ⬅
+    live: 'https://note-application-zeta.vercel.app/',
+    repo: 'https://github.com/1234amit/note-application',
   }
 
 ]
@@ -79,7 +91,7 @@ export default function WorkPage() {
             {p.title}
           </h1>
 
-          <p className={`${styles.blueBlock} mt-4 max-w-xl text-sm leading-relaxed`}style={{textAlign:"justify"}}>
+          <p className={`${styles.blueBlock} mt-4 max-w-xl text-sm leading-relaxed`} style={{ textAlign: "justify" }}>
             {p.desc}
           </p>
 
@@ -98,28 +110,34 @@ export default function WorkPage() {
         </section>
 
         {/* Right side – image & controls */}
-        <section className={styles.previewWrap}>
-          <div className={styles.previewInner}>
-            <Image
-              src={p.image}
-              alt={p.title}
-              fill
-              priority
-              unoptimized
-              sizes="(max-width: 768px) 90vw, 48vw"
-              className="object-cover rounded-xl"
-            />
+
+        <section className="relative">
+          <div className="relative mx-auto w-full max-w-[720px] rounded-2xl border border-white/10 bg-white/5 p-3 shadow-2xl shadow-emerald-500/10 ring-1 ring-white/10 backdrop-blur">
+            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+              <Image
+                src={p.image}
+                alt={p.title}
+                fill
+                priority={i === 0}
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 600px"
+                quality={85}
+              />
+              <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/5 dark:ring-white/5" />
+              <div className="pointer-events-none absolute -inset-6 blur-3xl bg-emerald-400/10" />
+            </div>
           </div>
 
-          <div className={styles.controls}>
-            <button className={styles.navBtn} onClick={prev} aria-label="Previous project">
+          <div className="absolute bottom-3 right-3 flex gap-2">
+            <button onClick={prev} aria-label="Previous project" className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/70 text-gray-900 backdrop-blur hover:bg-white dark:bg-gray-900/70 dark:text-gray-100 dark:hover:bg-gray-900">
               <ChevronLeft className="h-5 w-5" />
             </button>
-            <button className={styles.navBtn} onClick={next} aria-label="Next project">
+            <button onClick={next} aria-label="Next project" className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-emerald-500 text-white hover:bg-emerald-400">
               <ChevronRight className="h-5 w-5" />
             </button>
           </div>
         </section>
+
       </div>
     </main>
   )
