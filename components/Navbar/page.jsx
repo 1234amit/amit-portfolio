@@ -27,6 +27,7 @@ const Navber = () => {
           <Link className={linkCls('/services')} href="/services">Services</Link>
           <Link className={linkCls('/resume')} href="/resume">Resume</Link>
           <Link className={linkCls('/work')} href="/work">Work</Link>
+          <Link className={linkCls('/theme')} href="/theme">Theme</Link>
           <Link className={linkCls('/contact')} href="/contact">Contact</Link>
           <Link href="/contact">
             <Button className="ml-4 rounded-full bg-emerald-500 text-black hover:bg-emerald-400">Hire me</Button>
