@@ -67,7 +67,7 @@ const PROJECTS = [
       'NoteApp is a modern, full-stack note application built with Next.js (App Router) and NestJS, written end-to-end in TypeScript. It’s designed for speed, clarity, and focus—so you can capture ideas, organize them instantly, and get back to work without friction.',
 
     stack: ['Next js', 'Nest js'],
-    image: '/projects/note.PNG',         // ⬅
+    image: '/projects/note.png',         // ⬅
     live: 'https://note-application-zeta.vercel.app/',
     repo: 'https://github.com/1234amit/note-application',
   }
