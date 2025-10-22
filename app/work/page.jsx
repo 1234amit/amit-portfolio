@@ -50,7 +50,7 @@ const PROJECTS = [
   },
   {
     no: '05',
-    title: 'Pos Application',
+    title: 'Pos Application(Backend Project)',
     desc:
       'A full-featured Point of Sale (POS) application API developed using Spring Boot and PostgreSQL. This project provides core functionalities for managing products, handling sales transactions, generating invoices, and tracking customer and inventory data. It is designed with scalability and performance in mind, featuring secure REST APIs and database integration. Ideal for retail or business operations looking for a reliable POS backend system.',
 
