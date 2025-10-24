@@ -74,9 +74,9 @@ const PROJECTS = [
 
    {
     no: '07',
-    title: 'Job Portal',
+    title: 'Job Portal(Backend Project)',
     desc:
-      'A full-featured Job portal application API developed using Spring Boot and PostgreSQL.',
+      "A secure and scalable Job Portal backend API built using Spring Boot and PostgreSQL.This project powers the core functionality of a modern job marketplace — allowing candidates to register, log in, and apply for jobs, while employers can post and manage job listings. It includes features such as JWT-based authentication, role-based access control (Admin, Employer, Candidate), CRUD operations for jobs and users, and structured RESTful API endpoints.Built with clean architecture and modular design, the system ensures maintainability, security, and performance, making it ideal for integration with React, Angular, or mobile frontends.",
 
     stack: ['Spring Boot', 'PostgreSql'],
     image: '/projects/1.png',         // ⬅
@@ -99,7 +99,7 @@ export default function WorkPage() {
         <section>
           <div className={styles.numBadge}>{p.no}</div>
 
-          <h1 className={`${styles.blueBlock} mt-4 inline-block text-3xl md:text-4xl font-extrabold`}>
+          <h1 className={`${styles.blueBlock} mt-4 inline-block text-3xl md:text-4xl font-extrabold`} style={{fontSize:"30px"}}>
             {p.title}
           </h1>
 
