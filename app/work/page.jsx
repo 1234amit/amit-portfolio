@@ -70,6 +70,18 @@ const PROJECTS = [
     image: '/projects/note.png',         // ⬅
     live: 'https://note-application-zeta.vercel.app/',
     repo: 'https://github.com/1234amit/note-application',
+  },
+
+   {
+    no: '07',
+    title: 'Job Portal',
+    desc:
+      'A full-featured Job portal application API developed using Spring Boot and PostgreSQL.',
+
+    stack: ['Spring Boot', 'PostgreSql'],
+    image: '/projects/1.png',         // ⬅
+    live: '#',
+    repo: 'https://github.com/1234amit/job-portal-backend',
   }
 
 ]
